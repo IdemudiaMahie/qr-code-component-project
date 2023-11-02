@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+/* Colors */
+--White: hsl(0, 0%, 100%);
+--Light-gray: hsl(212, 45%, 89%);
+--Grayish-blue: hsl(220, 15%, 55%);
+--Dark-blue: hsl(218, 44%, 22%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Light-gray);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+article {
+    background-color: var(--White);
+    border-radius: 1rem;
+    padding: 1.1rem;
+    margin: 1.8rem;
+    box-shadow: 2px 2px 23px 1px var(--Grayish-blue);
+}
+
+figure{
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    display: block;
+}
+
+figcaption {
+    position: absolute;
+    left: -1000px;
+}
+
+h1 {
+    font-weight: 700;
+    color: var(--Dark-blue);
+    margin: 1rem 0;
+}
+
+p {
+    font-weight: 400;
+    color: var(--Grayish-blue);
+    margin-bottom: 1.5rem;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: fixed;
+    bottom: 0;
+    background-color: #ff0;
+    width: 100%;
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (min-width: 1440px) {
+    article {
+        width: 19.375rem;
+        height: 30rem;
+    }
+}
